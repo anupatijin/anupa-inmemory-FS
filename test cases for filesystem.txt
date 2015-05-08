@@ -1,0 +1,52 @@
+1) Create a new folder.
+
+TC1: Program should throw error when given invalid pathname for directory.
+TC2: Program should not create a new directory which is already existing. The program should continue using existing directory.
+TC3: While copying directories the existing contents of destination directory should not be removed.
+TC4: Error when path has special characters.
+TC5: Error when nested directory crosses nest or maximum path length limits.
+TC6: Error when directory name crosses max path length.
+
+2) Create new file.
+
+TC7: Error when filename has special characters.
+TC8: Error when filename exceeds max path length.
+TC9: Assuming program runs in windows, filenames should not be case sensitive.
+
+3) Add contents to a file.
+
+TC10: If we try to add nothing it should work.
+TC11: Overwriting existing file contents should work.
+TC12: Input contents can have special characters or can have any text as input.
+
+4) Copy files.
+
+TC13: Unit test that the contents are same say by checksumming the contents and matching it.
+TC14: Copy should work between files with different paths.
+TC15: Copy should work with files with symbolic paths.
+
+5) Display file contents.
+
+TC16: Verify that copied contents are same.
+
+6) List folder contents.
+
+TC17: Verify that all the folder contents are displayed including symbolic names.
+
+7) Search for a file by name
+
+TC18: Search should work with same name but different cases.
+TC19: Error for search with file with special characters.
+TC20: Appropriate Message when no file exists with the input file name.
+TC21: Appropriate message when absolute path name is wrong. 
+
+8) Search for a file by wildcard name of the file.
+
+TC22: Wildcard searches should work. For example: Search input as man should display all files with names as - man.txt, man.jpeg, mango.txt etc.
+
+9)  Copy directories or folder.
+
+TC23: Verify that all the contents of source folder is copied into destination folder.
+TC24: Verify that the source directory contents doesn't get deleted.
+TC25: Verify that the existing destination directory contents remain and new contents from source folder appends to existing contents.
+TC26: Verify that the existing files in destination folder with same name as files in source folder does not get overwritten.
